@@ -1,0 +1,84 @@
+/* Resetear estilos del navegador*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Declaramos variables personalizadas para nuestra paleta de colores. */
+:root {
+    --color-principal-fondo: #ffe6a7;
+    --color-titulos: #dc2f02;
+    --color-texto: black;
+    --color-botones: #A2D2FF;
+   /* --fuente-principal: "Arial", serif;*/
+   --fuente-cuerpo: 'Hanalei Fill', system-ui;
+   --fuente-subtitulos:'Hanalei Fill', system-ui;
+}
+body {
+    font-family: "Merriweather";
+    background-color: var(--color-principal-fondo);
+    /*justify-content: center;*/
+    color: var(--color-titulos);
+    /*text-align: center;*/
+    display: flex;
+    justify-content: center;
+    }
+.container{
+    max-width: 800px; /* Este es el ancho máximo en pantallas grandes. */
+    width: 100% ; /* Ocupar todo el ancho disponible. */
+}
+.page-header{
+    text-align: center;
+    margin-bottom: 40px; /* Crea un espacio debajo de header */
+}
+/* Important debe usarse con moderación, evitar su uso lo más posible.
+h1{
+    color: pink !important;
+}*/
+h1{
+    font-size: 50px; /* Tamaño de fuente del título. */
+    /*  margin-bottom: 20px; Espaciado de 20px hacia abajo, para separarse de <p*/>
+}
+.page-header p{
+    margin-top: 40px;
+}
+#subtitle {
+    font-family: var(--fuente-subtitulos);
+    color: black;
+}
+/* Tarjeta */
+.card {
+    background-color: #00a8e8;
+    border: 3px solid black;
+    border-radius: 35px;
+    padding: 10px; /* Espacio interno de la tarjeta. */
+    margin: 40px; /* Espacio externo de la tarjeta*/
+    /*flexbox*/
+    display: flex; /* Convierte nuestro contenedor en un contenedor flexible. */
+    align-items: center; /* Alinea los elementos dentro del contenedor. */
+    gap:40px; /* Crear un espacio de 40px entre cada elemento. */
+}
+/* Selector de pseudoclase. */
+.card:hover {
+    transform: translateY(-30px); /* Mueve la tarjeta 5px hacia arriba. */
+    box-shadow: 10px 5px 20px 
+    }
+h2{
+    font-size: 6em; /* em: Unidad de medida relativa. */
+    margin: 0 0 5px 30px;
+}
+img {
+    max-width: 100%;
+    height: auto; /* Mantiene la proporción de la imagen al cambiar al ancho */
+    border: solid black;
+    border-radius: 40px;
+}
+button {
+    background-color: black;
+    border: 2px solid black;
+    border-radius: 15px;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 10px;
+    margin: 5px;
+}
